@@ -27,6 +27,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--cream);
@@ -146,6 +150,25 @@
       box-shadow: 0 6px 24px rgba(0,0,0,0.15);
     }
 
+    section {
+      padding: 60px 6%;
+      background-color: white;
+      margin-top: 40px;
+      border-radius: 12px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--green-dark);
+      font-family: 'Playfair Display', serif;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: var(--gray);
+    }
+
     @media (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -192,11 +215,11 @@
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Wedding</a></li>
-        <li><a href="#">Birthday</a></li>
-        <li><a href="#">Baptism</a></li>
-        <li><a href="#">Graduation</a></li>
-        <li><a href="#">Other Events</a></li>
+        <li><a href="#wedding">Wedding</a></li>
+        <li><a href="#birthday">Birthday</a></li>
+        <li><a href="#baptism">Baptism</a></li>
+        <li><a href="#graduation">Graduation</a></li>
+        <li><a href="#others">Other Events</a></li>
       </ul>
     </nav>
     <div class="actions">
@@ -215,7 +238,30 @@
     </div>
   </section>
 
-  <!-- Additional filled sections like Wedding, Birthday, Baptism, etc. follow here -->
+  <section id="wedding">
+    <h2>Wedding Invites</h2>
+    <p>Celebrate your love story with elegant digital invitations perfect for your big day. Choose from classic, modern or floral themes that reflect your style.</p>
+  </section>
+
+  <section id="birthday">
+    <h2>Birthday Invites</h2>
+    <p>Make birthdays extra special with fun and colorful invites. Whether it is a sweet sixteen or a milestone year, find the perfect design for the celebration.</p>
+  </section>
+
+  <section id="baptism">
+    <h2>Baptism Invites</h2>
+    <p>Welcome your little one into the world of faith with charming and heartfelt digital invites designed for baptisms and christenings.</p>
+  </section>
+
+  <section id="graduation">
+    <h2>Graduation Invites</h2>
+    <p>Honor your academic achievements with proud and polished invitation designs that celebrate every graduate’s journey and success.</p>
+  </section>
+
+  <section id="others">
+    <h2>Other Events</h2>
+    <p>Hosting something unique? From baby showers to retirement parties, explore invite templates for all your special occasions.</p>
+  </section>
 
   <footer style="background-color: #204e4a; color: white; text-align: center; padding: 40px 20px; margin-top: 80px; font-family: 'Inter', sans-serif;">
     <p style="font-size: 1rem; margin-bottom: 10px;">&copy; 2025 e-Invite Studio. All rights reserved.</p>
